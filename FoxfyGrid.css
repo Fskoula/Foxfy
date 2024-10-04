@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 0px 10px;
+}
+
+.cabeçalho {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-grid p {
+    border: 3px solid black
+    
+}
+
+.rodape {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

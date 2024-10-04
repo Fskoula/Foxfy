@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+.cabeçalho {
+    text-align: center;
+    color: rgb(234, 173, 59);
+    font-family: Arial;
+}
+
+header {
+    
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+}
+
+.botão-entrar {
+    
+} 
