@@ -1,0 +1,89 @@
+$cor-fundo: #000000;
+$cor-primaira: #ffffff;
+$cor-secundaria: #435c2f9f;
+$cor-terceira: #f78e37c5;
+
+@mixin displayFlex ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin backgraund ($padding, $color, $margin) {
+    padding: $padding;
+    background-color: $color;
+    margin: $margin;
+}
+
+@mixin Font ($size, $color) {
+    font-size: $size;
+    color: $color;
+    font-family: 'tan nimbus';
+}
+
+body {
+    @include backgraund(30px, $cor-fundo, 3px)
+}
+
+.fundo {
+    @include backgraund(20px, $cor-secundaria, 2px)
+}
+
+header {
+    @include displayFlex(row, space-around);
+    padding: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    img {
+        width: 50px;
+        height: 50px
+    }
+
+    h1 {
+        @include Font(40px, $cor-terceira);
+    }
+
+    p {
+        @include Font(20px, $cor-primaira);
+    }
+
+    nav {
+        ul {
+            @include displayFlex(row, space-evenly);
+            padding: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: darken($cor-secundaria, 5%);
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            @include Font(15px, $cor-primaira);
+        }
+    }
+}
+
+main {
+    form {
+        input {
+            border: 2px solid $cor-secundaria;
+        }
+
+        button {
+            color: $cor-secundaria;
+            border: 2px solid $cor-secundaria;
+            margin: 2px;
+        }
+
+        button:hover {
+            background-color: darken($cor-secundaria, 5%);
+        }
+    }
+}
