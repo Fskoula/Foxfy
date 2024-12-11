@@ -1,6 +1,6 @@
-$cor-fundo: #000000;
-$cor-primaira: #ffffff;
-$cor-secundaria: #435c2f9f;
+$cor-fundo: #262628;
+$cor-primaira: #fff6ef;
+$cor-secundaria: #a01706;
 $cor-terceira: #f78e37c5;
 
 @mixin displayFlex ($direction, $justify) {
@@ -21,34 +21,45 @@ $cor-terceira: #f78e37c5;
     font-family: 'tan nimbus';
 }
 
+@mixin Box ($altura, $largura, $borda, $cor) {
+    height: $altura;
+    width: $largura;
+    border: $borda;
+    background-color: $cor;
+}
+
 body {
     @include backgraund(30px, $cor-fundo, 3px)
 }
 
 .fundo {
-    @include backgraund(20px, $cor-secundaria, 2px)
+    @include backgraund(20px, $cor-primaira, 2px)
 }
 
 header {
     @include displayFlex(row, space-around);
-    padding: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
 
-    img {
-        width: 50px;
-        height: 50px
-    }
+    div {
+        @include displayFlex(column, space-evenly);
 
-    h1 {
-        @include Font(40px, $cor-terceira);
-    }
+        img {
+            width: 60px;
+            height: 60px
+        }
 
-    p {
-        @include Font(20px, $cor-primaira);
+        h1 {
+            @include Font(25px, $cor-fundo);
+        }
+
+        p {
+            @include Font(20px, $cor-fundo);
+            text-decoration: underline;
+        }
     }
 
     nav {
+        margin-top: 7%;
+
         ul {
             @include displayFlex(row, space-evenly);
             padding: 10px;
@@ -59,31 +70,65 @@ header {
         }
 
         li:hover {
-            background-color: darken($cor-secundaria, 5%);
+            background-color: lighten($cor-secundaria, 5%);
         }
 
         a {
             text-decoration: none;
             padding: 10px;
-            @include Font(15px, $cor-primaira);
+            @include Font(20px, $cor-fundo);
         }
     }
 }
 
 main {
+    margin-top: 2%;
+    margin-bottom: 1%;
+
     form {
+        @include displayFlex(row, center);
+
         input {
-            border: 2px solid $cor-secundaria;
+            border: 2px solid $cor-primaira;
+            height: 40px;
+            width: 700px;
         }
 
         button {
-            color: $cor-secundaria;
-            border: 2px solid $cor-secundaria;
+            color: $cor-fundo;
+            border: 2px solid $cor-primaira;
+            border-radius: 5%;
             margin: 2px;
+            height: 30px;
         }
 
         button:hover {
-            background-color: darken($cor-secundaria, 5%);
+            background-color: lighten($cor-secundaria, 5%);
+        }
+    }
+
+    .novidades {
+        .tituloNovidades {
+            @include displayFlex(column, center);
+            margin: 5%;
+            color: $cor-primaira;
+        }
+
+        .chamadasNovidades {
+            @include displayFlex(row, space-evenly);
+            padding-bottom: 5%;
+
+            .caixaPlay {
+                @include Box(250px, 250px, 3px solid $cor-secundaria, $cor-primaira);
+                text-align: center;
+                @include Font(18px, $cor-fundo);
+            
+                img {
+                    max-width: 200px;
+                    max-height: 200px;
+                    align-content: center;
+                }
+            }
         }
     }
 }

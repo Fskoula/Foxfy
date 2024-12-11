@@ -1,12 +1,12 @@
 body {
   padding: 30px;
-  background-color: #000000;
+  background-color: #262628;
   margin: 3px;
 }
 
 .fundo {
   padding: 20px;
-  background-color: rgba(67, 92, 47, 0.6235294118);
+  background-color: #fff6ef;
   margin: 2px;
 }
 
@@ -14,23 +14,29 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
 }
-header img {
-  width: 50px;
-  height: 50px;
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-header h1 {
-  font-size: 40px;
-  color: rgba(247, 142, 55, 0.7725490196);
+header div img {
+  width: 60px;
+  height: 60px;
+}
+header div h1 {
+  font-size: 25px;
+  color: #262628;
   font-family: "tan nimbus";
 }
-header p {
+header div p {
   font-size: 20px;
-  color: #ffffff;
+  color: #262628;
   font-family: "tan nimbus";
+  text-decoration: underline;
+}
+header nav {
+  margin-top: 7%;
 }
 header nav ul {
   display: flex;
@@ -42,26 +48,67 @@ header nav li {
   list-style: none;
 }
 header nav li:hover {
-  background-color: rgba(54.7086330935, 75.1223021583, 38.3776978417, 0.6235294118);
+  background-color: rgb(184.578313253, 26.5331325301, 6.921686747);
 }
 header nav a {
   text-decoration: none;
   padding: 10px;
-  font-size: 15px;
-  color: #ffffff;
+  font-size: 20px;
+  color: #262628;
   font-family: "tan nimbus";
 }
 
+main {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+main form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 main form input {
-  border: 2px solid rgba(67, 92, 47, 0.6235294118);
+  border: 2px solid #fff6ef;
+  height: 40px;
+  width: 700px;
 }
 main form button {
-  color: rgba(67, 92, 47, 0.6235294118);
-  border: 2px solid rgba(67, 92, 47, 0.6235294118);
+  color: #262628;
+  border: 2px solid #fff6ef;
+  border-radius: 5%;
   margin: 2px;
+  height: 30px;
 }
 main form button:hover {
-  background-color: rgba(54.7086330935, 75.1223021583, 38.3776978417, 0.6235294118);
+  background-color: rgb(184.578313253, 26.5331325301, 6.921686747);
+}
+main .novidades .tituloNovidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+  color: #fff6ef;
+}
+main .novidades .chamadasNovidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+}
+main .novidades .chamadasNovidades .caixaPlay {
+  height: 250px;
+  width: 250px;
+  border: 3px solid #a01706;
+  background-color: #fff6ef;
+  text-align: center;
+  font-size: 18px;
+  color: #262628;
+  font-family: "tan nimbus";
+}
+main .novidades .chamadasNovidades .caixaPlay img {
+  max-width: 200px;
+  max-height: 200px;
+  align-content: center;
 }
 
 /*# sourceMappingURL=Foxfy.css.map */

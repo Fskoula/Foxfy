@@ -9,11 +9,14 @@
 </head>
 
 <body>
-    <div class="fundo">
-        <header>
-            <img src="img/raposa.png">
-            <h1>Foxfy</h1>
-            <p>Suas músicas quando e onde quiser</p>
+    <div>
+        <header class="fundo">
+            <div>
+                <img src="img/LogoRaposa.png">
+                <h1>Foxfy</h1>
+                <p>Suas músicas em um só lugar</p>
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="#">Playlists</a></li>
@@ -29,68 +32,97 @@
         <main>
             <section>
                 <form>
-                    <input type="text" placeholder="Pesquisa">
+                    <input type="text" placeholder="Pesquisar">
                     <button>Buscar</button>
                 </form>
             </section>
+
+            <section>
+                <div class="novidades">
+                    <div class="tituloNovidades">
+                        <h2>Novidades no ar!</h2>
+                        <p>Veja as músicas do momento</p>
+                    </div>
+
+                    <div class="chamadasNovidades">
+                        <div class="caixaPlay">
+                            <h3>Top 10 Mundial!</h3>
+                            <img src="img/linkin-park.avif">
+                            <p>Linkin Park, Deftones, Slipknot...</p>
+                        </div>
+                        <div class="caixaPlay">
+                            <h3>Top 10 Brasil!</h3>
+                        </div>
+                        <div class="caixaPlay">
+                            <h3>Mais ouvidas de 2024!</h3>
+                        </div>
+                        <div class="caixaPlay">
+                            <h3>Novidades feitas pra você</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <section>
-            <h3>Suas Playlists</h3>
+        <section class="fundo">
+            <div>
+                <h3>Suas Playlists</h3>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5" />
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5" />
+                </svg>
 
-            <img src="img/linkin-park-album.avif" height="70" width="70">
-            <img src="img/linkin-park.avif" height="70" width="70">
-            <img src="img/Linkin_Park_album.jpg" height="70" width="70">
+                <img src="img/linkin-park-album.avif" height="70" width="70">
+                <img src="img/linkin-park.avif" height="70" width="70">
+                <img src="img/Linkin_Park_album.jpg" height="70" width="70">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
-            </svg>
-        </section>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
+                </svg>
+            </div>
 
-        <section>
-            <h3>Playlist:</h3>
-            <label>Todas do Linkin Park</label><br />
-            <img src="img/linkin-park-album.avif" height="40" width="40">
-            <img src="img/linkin-park-album.avif" height="40" width="40">
-            <img src="img/linkin-park-album.avif" height="40" width="40">
-            <img src="img/linkin-park-album.avif" height="40" width="40">
-        </section>
 
-        <section>
-            <h3>Numb - Linkin Park</h3>
-            <video controls width="400" height="300">
-                <source src="" type="">
-            </video>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shuffle"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
-                <path
-                    d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-            </svg>
+            <div>
+                <h3>Playlist:</h3>
+                <label>Todas do Linkin Park</label><br />
+                <img src="img/linkin-park-album.avif" height="40" width="40">
+                <img src="img/linkin-park-album.avif" height="40" width="40">
+                <img src="img/linkin-park-album.avif" height="40" width="40">
+                <img src="img/linkin-park-album.avif" height="40" width="40">
+            </div>
+
+            <div>
+                <h3>Numb - Linkin Park</h3>
+                <video controls width="400" height="300">
+                    <source src="" type="">
+                </video>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shuffle"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
+                    <path
+                        d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </div>
         </section>
     </div>
 
